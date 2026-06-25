@@ -1,0 +1,144 @@
+{
+  "version": "1.0",
+  "generated": "2026-06-25T06:05:59Z",
+  "counts": {
+    "total": 4,
+    "by_type": {
+      "engineering-standard": 1,
+      "architectural-decision-record": 1,
+      "design-specification": 1,
+      "operations-manual": 1,
+      "incident-report": 0,
+      "maintenance-bulletin": 0,
+      "research-paper": 0
+    },
+    "by_status": {
+      "active": 4,
+      "draft": 0,
+      "deprecated": 0,
+      "superseded": 0
+    }
+  },
+  "documents": [
+    {
+      "id": "ES-0001",
+      "type": "engineering-standard",
+      "title": "Material Language \u2014 CSS Design Tokens",
+      "status": "active",
+      "severity": null,
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "author": "ghost",
+      "path": "es/ES-0001-material-language.md",
+      "references": [
+        "ADR-0001"
+      ],
+      "referenced_by": [
+        "DS-0001"
+      ],
+      "tags": [
+        "css",
+        "design-tokens",
+        "frontend",
+        "attraction",
+        "corporate"
+      ],
+      "summary": "Defines all CSS custom properties used across the LDI site, mapped to their semantic roles and the grammar contexts in which each token applies."
+    },
+    {
+      "id": "ADR-0001",
+      "type": "architectural-decision-record",
+      "title": "The Attraction Precedes the Corporate Layer",
+      "status": "active",
+      "severity": null,
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "author": "john",
+      "path": "adr/ADR-0001-attraction-precedes-corporate.md",
+      "references": [],
+      "referenced_by": [
+        "ES-0001",
+        "DS-0001"
+      ],
+      "tags": [
+        "information-architecture",
+        "brand-strategy",
+        "routing",
+        "ldi-identity"
+      ],
+      "summary": "The public entry point for lithium-dreams.com is the roadside attraction, not the consulting services section. This records why."
+    },
+    {
+      "id": "DS-0001",
+      "type": "design-specification",
+      "title": "/work Hero Section",
+      "status": "active",
+      "severity": null,
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "author": "ghost",
+      "path": "ds/DS-0001-work-hero-section.md",
+      "references": [
+        "ES-0001",
+        "ADR-0001"
+      ],
+      "referenced_by": [],
+      "tags": [
+        "frontend",
+        "corporate-grammar",
+        "hero",
+        "work-section"
+      ],
+      "summary": "Full-bleed background image hero for the /work landing page. Copy floats left over a left-to-right gradient. Brass accents throughout."
+    },
+    {
+      "id": "OM-0001",
+      "type": "operations-manual",
+      "title": "Bob's Dream Crown Pipeline",
+      "status": "active",
+      "severity": null,
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "author": "bob",
+      "path": "om/OM-0001-bobs-dream-crown.md",
+      "references": [],
+      "referenced_by": [],
+      "tags": [
+        "bob",
+        "hermes",
+        "pipeline",
+        "idea-generation",
+        "engineering-workflow"
+      ],
+      "summary": "The process by which Bob's generative ideas move from reflection to engineering documents and implementation."
+    }
+  ],
+  "reference_graph": {
+    "ES-0001": {
+      "references": [
+        "ADR-0001"
+      ],
+      "referenced_by": [
+        "DS-0001"
+      ]
+    },
+    "ADR-0001": {
+      "references": [],
+      "referenced_by": [
+        "ES-0001",
+        "DS-0001"
+      ]
+    },
+    "DS-0001": {
+      "references": [
+        "ES-0001",
+        "ADR-0001"
+      ],
+      "referenced_by": []
+    },
+    "OM-0001": {
+      "references": [],
+      "referenced_by": []
+    }
+  }
+}
