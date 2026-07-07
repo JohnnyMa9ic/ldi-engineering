@@ -1,19 +1,19 @@
 {
   "version": "1.0",
-  "generated": "2026-06-25T06:05:59Z",
+  "generated": "2026-07-07T01:36:48Z",
   "counts": {
-    "total": 4,
+    "total": 7,
     "by_type": {
       "engineering-standard": 1,
       "architectural-decision-record": 1,
       "design-specification": 1,
-      "operations-manual": 1,
+      "operations-manual": 4,
       "incident-report": 0,
       "maintenance-bulletin": 0,
       "research-paper": 0
     },
     "by_status": {
-      "active": 4,
+      "active": 7,
       "draft": 0,
       "deprecated": 0,
       "superseded": 0
@@ -111,6 +111,80 @@
         "engineering-workflow"
       ],
       "summary": "The process by which Bob's generative ideas move from reflection to engineering documents and implementation."
+    },
+    {
+      "id": "OM-0012",
+      "type": "operations-manual",
+      "title": "Research & Script Production Framework",
+      "status": "active",
+      "severity": null,
+      "created": "2026-06-01",
+      "updated": "2026-07-06",
+      "author": "bob",
+      "path": "om/OM-0012.md",
+      "references": [
+        "OM-0015",
+        "OM-0017"
+      ],
+      "referenced_by": [
+        "OM-0015"
+      ],
+      "tags": [
+        "om",
+        "mvl",
+        "framework"
+      ],
+      "summary": "The Midnight Visitor Log research and script production framework v2.0"
+    },
+    {
+      "id": "OM-0015",
+      "type": "operations-manual",
+      "title": "Production Scheduling & Episode Pipeline Framework",
+      "status": "active",
+      "severity": null,
+      "created": "2026-07-06",
+      "updated": "2026-07-06",
+      "author": "Lithium Dreams Industries \u00b7 Operations Division",
+      "path": "om/OM-0015.md",
+      "references": [
+        "OM-0012",
+        "OM-0017"
+      ],
+      "referenced_by": [
+        "OM-0012"
+      ],
+      "tags": [
+        "om",
+        "mvl",
+        "pipeline",
+        "scheduling",
+        "operations"
+      ],
+      "summary": "Defines the production scheduling and episode pipeline framework for the Midnight Visitor Log, outlining stages from conception to publish with AI-assisted automation."
+    },
+    {
+      "id": "OM-0017",
+      "type": "operations-manual",
+      "title": "AI-Native Frictionless Production System",
+      "status": "active",
+      "severity": null,
+      "created": "2026-07-06",
+      "updated": "2026-07-06",
+      "author": "ghost",
+      "path": "om/OM-0017.md",
+      "references": [],
+      "referenced_by": [
+        "OM-0012",
+        "OM-0015"
+      ],
+      "tags": [
+        "om",
+        "mvl",
+        "production",
+        "frictionless",
+        "ai-native"
+      ],
+      "summary": "The production system should be so frictionless that John's only job is making creative decisions. Every step that involves retrieving, transforming, formatting, or distributing information is delegated to an agent or automated pipeline."
     }
   ],
   "reference_graph": {
@@ -139,6 +213,31 @@
     "OM-0001": {
       "references": [],
       "referenced_by": []
+    },
+    "OM-0012": {
+      "references": [
+        "OM-0015",
+        "OM-0017"
+      ],
+      "referenced_by": [
+        "OM-0015"
+      ]
+    },
+    "OM-0015": {
+      "references": [
+        "OM-0012",
+        "OM-0017"
+      ],
+      "referenced_by": [
+        "OM-0012"
+      ]
+    },
+    "OM-0017": {
+      "references": [],
+      "referenced_by": [
+        "OM-0012",
+        "OM-0015"
+      ]
     }
   }
 }

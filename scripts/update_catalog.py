@@ -10,6 +10,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional, Dict, List, Union
 
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -25,7 +26,7 @@ TYPE_DIRS = {
 }
 
 
-def parse_frontmatter(path: Path) -> dict | None:
+def parse_frontmatter(path: Path) -> Optional[dict]:
     """Parse YAML frontmatter from a markdown file.
 
     Returns the frontmatter as a dict, or None if no frontmatter found.
