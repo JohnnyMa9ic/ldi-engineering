@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-07-07T01:36:48Z",
+  "generated": "2026-07-07T01:55:18Z",
   "counts": {
     "total": 7,
     "by_type": {
@@ -127,7 +127,8 @@
         "OM-0017"
       ],
       "referenced_by": [
-        "OM-0015"
+        "OM-0015",
+        "OM-0017"
       ],
       "tags": [
         "om",
@@ -151,7 +152,8 @@
         "OM-0017"
       ],
       "referenced_by": [
-        "OM-0012"
+        "OM-0012",
+        "OM-0017"
       ],
       "tags": [
         "om",
@@ -172,7 +174,10 @@
       "updated": "2026-07-06",
       "author": "ghost",
       "path": "om/OM-0017.md",
-      "references": [],
+      "references": [
+        "OM-0012",
+        "OM-0015"
+      ],
       "referenced_by": [
         "OM-0012",
         "OM-0015"
@@ -220,7 +225,8 @@
         "OM-0017"
       ],
       "referenced_by": [
-        "OM-0015"
+        "OM-0015",
+        "OM-0017"
       ]
     },
     "OM-0015": {
@@ -229,11 +235,15 @@
         "OM-0017"
       ],
       "referenced_by": [
-        "OM-0012"
+        "OM-0012",
+        "OM-0017"
       ]
     },
     "OM-0017": {
-      "references": [],
+      "references": [
+        "OM-0012",
+        "OM-0015"
+      ],
       "referenced_by": [
         "OM-0012",
         "OM-0015"
